@@ -161,7 +161,6 @@ hr{
     padding: 15px;
     gap: 15px;
     position: sticky;
-    z-index: 1;
     top:0;
     background: #000;
     overflow: hidden;
