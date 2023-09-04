@@ -160,7 +160,7 @@ hr{
     align-items: center;
     padding: 15px;
     gap: 15px;
-    position: sticky;
+    position: fixed;
     z-index: 1;
     background: #000;
     overflow: hidden;
