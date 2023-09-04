@@ -6,10 +6,13 @@
 body {
     display: flex;
     overflow: hidden;
-    color: white;
+    color: #F1F1F1;
     background: #000;
     flex-direction: column;
     flex: 1;
+
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .main_container {
@@ -18,6 +21,67 @@ body {
     height: 92vh;
 }
 
+
+/* <..................sidebar......................> */
+.sidebar {
+    /* background: red; */
+    flex: 0.17;
+    overflow-y: scroll;
+    height: 100%;
+}
+.sidebar-top{
+    margin-top: 20px;
+}
+.upperside{
+    white-space: nowrap;
+    margin-inline: 10px;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.upperside>h4{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 0;
+}
+.footer-bottom-sidebar{
+    padding: 12px 24px 0;
+}
+.footer-bottom-text{
+    font-size: 13px;
+    font-weight: 100;
+    color: #AAAAAA;
+    white-space: normal;
+    line-height: 18px;
+}
+.image{
+    border-radius: 50%;
+}
+.upperside:hover{
+    background-color: #303030;
+    cursor: pointer;
+}
+hr{
+    margin: 20px 10px;
+    opacity: .3;
+}
+.hrline{
+    margin-inline: 0px;
+}
+
+
+
+
+/* <....................rightbsr..................> */
+
+
+.scroll-div {
+    flex: 0.85;
+    height: 100%; 
+    overflow-y: scroll;
+}
 .navbar {
     position: sticky;
     top: 0;
@@ -96,9 +160,10 @@ body {
     align-items: center;
     padding: 15px;
     gap: 15px;
-    position: fixed;
+    position: sticky;
     z-index: 1;
     background: #000;
+    overflow: hidden;
 }
 .navbar-scroll>div{
     background: #272727;
@@ -107,45 +172,74 @@ body {
     white-space: nowrap;
     text-transform: capitalize;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sidebar {
-    background: red;
-    flex: 0.17;
-    overflow-y: scroll;
-    height: 100%;
+.navbar-scroll>div:hover{
+    background: #303030;
+    cursor: pointer;
+}
+.vedio-container{
+    margin-inline: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.card{
+    padding-top: 12px ;
 }
 
-.scroll-div {
-    flex: 0.85;
-    height: 100%; 
-    overflow-y: scroll;
+.card>img{
+    
+    width: 100%;
+    height: 225px;
+    border-radius: 1rem;
 }
+h5{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.description>p{
+    color:  #AAAA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+.card-buttom{
+    display: flex;
+    gap: 18px;
+    padding: 10px 0;
+}
+.card-buttom>img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
